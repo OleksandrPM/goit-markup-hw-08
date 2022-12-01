@@ -1,0 +1,31 @@
+.clientage-list {
+  display: flex;
+  gap: 30px;
+}
+
+.client-link {
+  width: 170px;
+  height: 92px;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #afb1b8;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition-duration: map-get($transitions, 'normal-transition-duration');
+  transition-timing-function: map-get($transitions, 'normal-transition-timing-function');
+  transition-property: color, border-color;
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'brand-color');
+    border-color: map-get($colors, 'brand-color');
+  }
+}
+
+.client-link__icon {
+  fill: currentColor;
+}

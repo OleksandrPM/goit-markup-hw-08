@@ -1,0 +1,7 @@
+.priorities-list {
+  display: flex;
+}
+
+.priorities-list__item:not(:last-child) {
+  margin-right: 30px;
+}

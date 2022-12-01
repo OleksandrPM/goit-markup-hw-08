@@ -1,0 +1,36 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+}
+
+.footer__container {
+  display: flex;
+
+  align-items: baseline;
+}
+
+.footer__address-block {
+  margin-right: 70px;
+}
+
+.address-block__logo {
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.footer__joining {
+  margin-right: auto;
+}
+
+.invitation__title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: map-get($colors, 'clear-white-color');
+}

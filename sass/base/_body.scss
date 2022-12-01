@@ -1,0 +1,17 @@
+.page {
+  font-family: map-get($fonts, 'main-font-family'), sans-serif;
+  font-size: 14px;
+  color: map-get($colors, 'main-text-color');
+
+  background-color: map-get($colors, 'clear-white-color');
+
+  &__pages-head {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__hero {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

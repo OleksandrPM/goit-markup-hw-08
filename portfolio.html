@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Modern Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  </head>
+
+  <body class="page">
+    <header class="pages-head page__pages-head">
+      <div class="container pages-head__container">
+        <nav class="head-nav pages-head__head-nav">
+          <a class="logo head-nav__logo link" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <ul class="list site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link link">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="site-nav__item"><a href="" class="site-nav__link link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="list contact-list contact-list--flex">
+          <li class="contact-list__item contact-list__item--in-flex">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contact-list__link contact-list__link--with-paddings link"
+            >
+              <svg class="contact-list__icon icon mail-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-list__item contact-list__item--in-flex">
+            <a
+              href="tel:+380961111111"
+              class="contact-list__link contact-list__link--with-paddings link"
+            >
+              <svg class="contact-list__icon icon tel-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Portfolio Section -->
+      <section class="section portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Портфоліо</h1>
+
+          <ul class="list sort-list portfolio__sort-list">
+            <li class="sort-list__item">
+              <button type="button" class="button sort-list__button sort-list__button--all">
+                Усі
+              </button>
+            </li>
+            <li class="sort-list__item">
+              <button type="button" class="button sort-list__button">Веб-сайти</button>
+            </li>
+            <li class="sort-list__item">
+              <button type="button" class="button sort-list__button">Додатки</button>
+            </li>
+            <li class="sort-list__item">
+              <button type="button" class="button sort-list__button">Дизайн</button>
+            </li>
+            <li class="sort-list__item">
+              <button type="button" class="button sort-list__button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="list portfolio-list">
+            <li class="project-card portfolio-list__item">
+              <div class="project-card__thumb">
+                <img
+                  class="image project-card__image"
+                  src="./images/portfolio/technokriak-web.jpg"
+                  alt="Сайт Технокряк"
+                  width="370"
+                />
+                <p class="project-card__article">
+                  Технокряк - це сайт для злому Ваших цифрових аккаунтів. Хтось "крякнув" Ваш
+                  банківський рахунок? Швидше за все, це були ми! Або ні)
+                </p>
+              </div>
+              <div class="project-card__description">
+                <h2 class="title project-card__title">Технокряк</h2>
+                <p class="project-card__kind">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project-card portfolio-list__item">
+              <div class="project-card__thumb">
+                <img
+                  class="image project-card__image"
+                  src="./images/portfolio/basketball.jpg"
+                  alt="Постер гри New Orlean vs Golden Star"
+                  width="370"
+                />
+                <p class="project-card__article">
+                  Хочете знати, як прийшла ідея з дизайном цього постера? Наш фотограф просто
+                  заставив баскетболістів цибнути у воду! Не питайте, як він це зробив!
+                </p>
+              </div>
+              <div class="project-card__description">
+                <h2 class="title project-card__title">Постер New Orlean vs Golden Star</h2>
+                <p class="project-card__kind">Дизайн</p>
+              </div>
+            </li>
+            <li class="project-card portfolio-list__item">
+              <div class="project-card__thumb">
+                <img
+                  class="image project-card__image"
+                  src="./images/portfolio/seafood.jpg"
+                  alt="Лого ресторану Seafood"
+                  width="370"
+                />
+                <p class="project-card__article">
+                  The Seafood - єдиний в Техасі ресторан морської їжі! Тільки найсвіжіші продукти!
+                  Присягаємось, що вся наша їжа була живою, коли її виловили із океану!
+                </p>
+              </div>
+              <div class="project-card__description">
+                <h2 class="title project-card__title">Ресторан Seafood</h2>
+                <p class="project-card__kind">Додаток</p>
+              </div>
+            </li>
+            <li class="project-card portfolio-list__item">
+              <div class="project-card__thumb">
+                <img
+                  class="image project-card__image"
+                  src="./images/portfolio/prime.jpg"
+                  alt="Дизайн проєкта Prime"
+                  width="370"
+                />
+                <p class="project-card__article">
+                  Ми просто продаємо підробні китайські навушники. Чому Prime? А як ще заставити Вас
+                  купити підробні китайські навушники?
+                </p>
+              </div>
+              <div class="project-card__description">
+                <h2 class="title project-card__title">Проєкт Prime</h2>
+                <p class="project-card__kind">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project-card portfolio-list__item">
+              <div class="project-card__thumb">
+                <img
+                  class="image project-card__image"
+                  src="./images/portfolio/boxes.jpg"
+                  alt="Дизайн проєкта Boxes"
+                  width="370"
+                />
+                <p class="project-card__article">
+                  Пропонуємо запакувати в наші коробочки все, що Ваша душа забажає, - від
+                  подарункового мила до колишнього, який вибішує! ;)
+                </p>
+              </div>
+              <div class="project-card__description">
+                <h2 class="title project-card__title">Проєкт Boxes</h2>
+                <p class="project-card__kind">Додаток</p>
+              </div>
+            </li>
+            <li class="project-card portfolio-list__item">
+              <div class="project-card__thumb">
+                <img
+                  class="image project-card__image"
+                  src="./images/portfolio/inspiration-web.jpg"
+                  alt="Дизайн сайту Inspiration has no Borders"
+                  width="370"
+                />
+                <p class="project-card__article">
+                  Наше натхнення не знає кордонів, тому ми вирішили зробити свій сайт в нудних
+                  чорно-білих кольорах!
+                </p>
+              </div>
+              <div class="project-card__description">
+                <h2 class="title project-card__title">Inspiration has no Borders</h2>
+                <p class="project-card__kind">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project-card portfolio-list__item">
+              <div class="project-card__thumb">
+                <img
+                  class="image project-card__image"
+                  src="./images/portfolio/limited-edition.jpg"
+                  alt="Дизайн видання Limited Edition"
+                  width="370"
+                />
+                <p class="project-card__article">
+                  Видання Limited Edition у найкращому вигляді реалізує Ваші амбітні плани із
+                  задоволення Вашого Его і видасть Вам книгу у кількості 1шт.
+                </p>
+              </div>
+              <div class="project-card__description">
+                <h2 class="title project-card__title">Видання Limited Edition</h2>
+                <p class="project-card__kind">Дизайн</p>
+              </div>
+            </li>
+            <li class="project-card portfolio-list__item">
+              <div class="project-card__thumb">
+                <img
+                  class="image project-card__image"
+                  src="./images/portfolio/lab.jpg"
+                  alt="Дизайн проєкта LAB"
+                  width="370"
+                />
+                <p class="project-card__article">
+                  Проєкт LAB - це амбіційний мертвонароджений проєкт з продажу лабораторних робіт із
+                  оккультизму
+                </p>
+              </div>
+              <div class="project-card__description">
+                <h2 class="title project-card__title">Проєкт LAB</h2>
+                <p class="project-card__kind">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project-card portfolio-list__item">
+              <div class="project-card__thumb">
+                <img
+                  class="image project-card__image"
+                  src="./images/portfolio/growing-business.jpg"
+                  alt="Дизайн Growing Business"
+                  width="370"
+                />
+                <p class="project-card__article">
+                  Growing business - це сумнівна фірма, яка виманить у Вас останні гроші, щоб
+                  посадити їх у благодатний грунт своїх кишень
+                </p>
+              </div>
+              <div class="project-card__description">
+                <h2 class="title project-card__title">Growing Business</h2>
+                <p class="project-card__kind">Додаток</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="address-block footer__address-block">
+          <a class="logo link address-block__logo logo--invert" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <address class="address">
+            <a
+              href="https://goo.gl/maps/X5hqmzbYpQWMFNwu7"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link address__post-address"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+            <ul class="list contact-list address__contacts">
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="link contact-list__link address__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="link contact-list__link address__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer__joining invitation">
+          <h2 class="title invitation__title">Приєднуйтесь</h2>
+          <ul class="list socials">
+            <li>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link socials__link socials__link--inverse"
+              >
+                <svg class="icon socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link socials__link socials__link--inverse"
+              >
+                <svg class="icon socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link socials__link socials__link--inverse"
+              >
+                <svg class="icon socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link socials__link socials__link--inverse"
+              >
+                <svg class="icon socials__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__subscription invitation">
+          <h2 class="title invitation__title">Підпишіться на розсилку</h2>
+          <form name="subscription_form" class="subscription-form" action="">
+            <input class="subscription-form__input" type="email" placeholder="E-mail" />
+            <button class="button subscription-form__button" type="submit">
+              <span class="subscription-form__span">Підписатися</span>
+              <svg class="icon subscription-form__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+
+  color: #afb1b8;
+
+  border-radius: 50%;
+
+  transition-duration: map-get($transitions, 'normal-transition-duration');
+  transition-timing-function: map-get($transitions, 'normal-transition-timing-function');
+  transition-property: color, background-color;
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'clear-white-color');
+    background-color: map-get($colors, 'brand-color');
+  }
+
+  &--inverse {
+    color: map-get($colors, 'clear-white-color');
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}

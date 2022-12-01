@@ -1,0 +1,11 @@
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list__item:not(:last-child) {
+  margin-right: 30px;
+}

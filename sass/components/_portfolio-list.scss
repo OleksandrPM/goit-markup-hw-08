@@ -1,0 +1,9 @@
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-list__item {
+  width: calc((100% - 60px) / 3);
+}
