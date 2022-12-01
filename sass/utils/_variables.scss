@@ -1,3 +1,10 @@
+:root {
+  // viewports
+  --tel-viewport: 480px;
+  --tablet-viewport: 768px;
+  --desktop-viewport: 1600px;
+}
+
 $fonts: (
   'main-font-family': 'Roboto',
   'main-font-style': normal,
