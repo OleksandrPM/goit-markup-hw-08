@@ -1,31 +1,49 @@
-.clientage-list {
+.clientage__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
-.client-link {
-  width: 170px;
+.clientage__item {
+  display: flex;
   height: 92px;
 
-  align-items: center;
-  justify-content: center;
+  // Phone styles
+  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+    width: calc((100% - (30px * 1)) / 2);
+  }
 
-  color: #afb1b8;
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    width: calc((100% - (30px * 2)) / 3);
+  }
 
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    width: calc((100% - (30px * 5)) / 6);
+  }
 
-  transition-duration: map-get($transitions, 'normal-transition-duration');
-  transition-timing-function: map-get($transitions, 'normal-transition-timing-function');
-  transition-property: color, border-color;
+  .clientage__link {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
-  &:hover,
-  &:focus {
-    color: map-get($colors, 'brand-color');
-    border-color: map-get($colors, 'brand-color');
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition-duration: map-get($transitions, 'normal-transition-duration');
+    transition-timing-function: map-get($transitions, 'normal-transition-timing-function');
+    transition-property: color, border-color;
+
+    &:hover,
+    &:focus {
+      color: map-get($colors, 'brand-color');
+      border-color: map-get($colors, 'brand-color');
+    }
   }
 }
 
-.client-link__icon {
+.clientage__icon {
   fill: currentColor;
 }

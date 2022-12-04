@@ -3,5 +3,20 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  width: map-get($sizes, 'container-width');
+  min-width: 320px;
+
+  // Phone styles
+  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+    width: map-get($breakpoints, 'phone');
+  }
+
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    width: map-get($breakpoints, 'tablet');
+  }
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    width: map-get($breakpoints, 'desktop');
+  }
 }

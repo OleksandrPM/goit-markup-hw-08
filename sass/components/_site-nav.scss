@@ -1,24 +1,49 @@
 .site-nav {
-  display: flex;
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    display: flex;
+  }
+}
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
+.site-nav__item {
+  // phone styles
+  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .site-nav__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
   color: map-get($colors, 'titles-color');
 
   transition-duration: map-get($transitions, 'normal-transition-duration');
   transition-timing-function: map-get($transitions, 'normal-transition-timing-function');
   transition-property: color;
+
+  // phone styles
+  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
+
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   &:hover,
   &:focus {
@@ -30,17 +55,20 @@
   position: relative;
   color: map-get($colors, 'brand-color');
 
-  &::after {
-    --width-difference: 10px;
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    &::after {
+      --width-difference: 10px;
 
-    position: absolute;
-    content: '';
-    bottom: 0px;
-    left: calc(0px - var(--width-difference) * 0.5);
+      position: absolute;
+      content: '';
+      bottom: 0px;
+      left: calc(0px - var(--width-difference) * 0.5);
 
-    width: calc(100% + var(--width-difference));
-    height: 4px;
-    background: map-get($colors, 'brand-color');
-    border-radius: 2px;
+      width: calc(100% + var(--width-difference));
+      height: 4px;
+      background: map-get($colors, 'brand-color');
+      border-radius: 2px;
+    }
   }
 }

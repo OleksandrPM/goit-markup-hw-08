@@ -1,9 +1,8 @@
-:root {
-  // viewports
-  --tel-viewport: 480px;
-  --tablet-viewport: 768px;
-  --desktop-viewport: 1600px;
-}
+$breakpoints: (
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1200px,
+);
 
 $fonts: (
   'main-font-family': 'Roboto',
@@ -15,14 +14,10 @@ $colors: (
   'clear-white-color': #ffffff,
   'titles-color': #212121,
   'brand-color': #2196f3,
+  'logo-color': #000000,
   'page-background-color': #f5f5f5,
   'hero-background-color': #c4c4c4,
   'active-buttons-color': #188ce8,
-);
-
-$sizes: (
-  'page-width': 1600px,
-  'container-width': 1200px,
 );
 
 $transitions: (

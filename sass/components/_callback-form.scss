@@ -12,7 +12,12 @@
 }
 
 .callback__checkbox {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    margin-bottom: 30px;
+  }
 }
 
 .callback__button {

@@ -22,52 +22,51 @@
     />
     <!-- Local Styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
 
   <body class="page">
-    <header class="pages-head page__pages-head">
-      <div class="container pages-head__container">
-        <nav class="head-nav pages-head__head-nav">
-          <a class="logo head-nav__logo link" href="./index.html"
+    <header class="pages-head">
+      <div class="container">
+        <nav class="head-nav">
+          <a class="link logo head-nav__logo" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <ul class="list site-nav">
+          <button class="button button-icon menu-toggle head-nav__button js-open-menu">
+            <svg class="head-nav__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-phone-menu"></use>
+            </svg>
+          </button>
+          <ul class="list site-nav head-nav__site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link link">Студія</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current link"
+              <a href="./portfolio.html" class="site-nav__link link site-nav__link--current"
                 >Портфоліо</a
               >
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link link">Контакти</a></li>
           </ul>
+
+          <ul class="list contacts contacts--header head-nav__contacts">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="link contacts__link">
+                <svg class="contacts__icon icon mail-icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="link contacts__link">
+                <svg class="contacts__icon icon tel-icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </nav>
-        <ul class="list contact-list contact-list--flex">
-          <li class="contact-list__item contact-list__item--in-flex">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contact-list__link contact-list__link--with-paddings link"
-            >
-              <svg class="contact-list__icon icon mail-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-list__item contact-list__item--in-flex">
-            <a
-              href="tel:+380961111111"
-              class="contact-list__link contact-list__link--with-paddings link"
-            >
-              <svg class="contact-list__icon icon tel-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -77,23 +76,26 @@
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
 
-          <ul class="list sort-list portfolio__sort-list">
+          <ul class="list choise-buttons portfolio__choise-buttons">
             <li class="sort-list__item">
-              <button type="button" class="button sort-list__button sort-list__button--all">
+              <button
+                type="button"
+                class="button choise-buttons__button choise-buttons__button--all"
+              >
                 Усі
               </button>
             </li>
-            <li class="sort-list__item">
-              <button type="button" class="button sort-list__button">Веб-сайти</button>
+            <li class="choise-buttons__item">
+              <button type="button" class="button choise-buttons__button">Веб-сайти</button>
             </li>
-            <li class="sort-list__item">
-              <button type="button" class="button sort-list__button">Додатки</button>
+            <li class="choise-buttons__item">
+              <button type="button" class="button choise-buttons__button">Додатки</button>
             </li>
-            <li class="sort-list__item">
-              <button type="button" class="button sort-list__button">Дизайн</button>
+            <li class="choise-buttons__item">
+              <button type="button" class="button choise-buttons__button">Дизайн</button>
             </li>
-            <li class="sort-list__item">
-              <button type="button" class="button sort-list__button">Маркетинг</button>
+            <li class="choise-buttons__item">
+              <button type="button" class="button choise-buttons__button">Маркетинг</button>
             </li>
           </ul>
 
@@ -279,16 +281,14 @@
               class="link address__post-address"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
-            <ul class="list contact-list address__contacts">
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="link contact-list__link address__link"
+            <ul class="list contacts contacts--footer address__contacts">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="link contacts__link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="link contact-list__link address__link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="link contacts__link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -362,5 +362,69 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="container menu-container js-menu-container" id="mobile-menu">
+      <button class="button button-icon menu-toggle menu-container__menu-toggle js-close-menu">
+        <svg class="menu-container__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-phone-close"></use>
+        </svg>
+      </button>
+
+      <ul class="list site-nav menu-container__site-nav">
+        <li class="site-nav__item">
+          <a href="./index.html" class="site-nav__link link">Студія</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="./portfolio.html" class="site-nav__link link site-nav__link--current"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="site-nav__item"><a href="" class="site-nav__link link">Контакти</a></li>
+      </ul>
+
+      <ul class="list contacts contacts--menu menu-container__contacts">
+        <li class="contacts__item"></li>
+        <li class="contacts__item">
+          <a href="tel:+380961111111" class="link contacts__link tel-link"> +38 096 111 11 11</a>
+        </li>
+        <li class="contacts__item">
+          <a href="mailto:info@devstudio.com" class="link contacts__link"> info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="list socials menu-container__socials">
+        <li>
+          <a href="" target="_blank" rel="noopener noreferrer" class="link socials__link">
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank" rel="noopener noreferrer" class="link socials__link">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank" rel="noopener noreferrer" class="link socials__link">
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank" rel="noopener noreferrer" class="link socials__link">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Mobile menu scripts -->
+    <!-- <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script> -->
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

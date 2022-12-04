@@ -1,7 +1,9 @@
 .person-card {
-  padding-bottom: 30px;
-
-  width: 270px;
+  padding-bottom: 24px;
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    padding-bottom: 30px;
+  }
 
   background-color: map-get($colors, 'clear-white-color');
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -11,6 +13,7 @@
 
 .person-card__image {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .person-card__title {
@@ -20,7 +23,6 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
   text-align: center;
 }
 
@@ -30,6 +32,5 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
   text-align: center;
 }

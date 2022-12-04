@@ -11,7 +11,7 @@
   position: relative;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
 }
 
 .checkbox__check-frame {
@@ -51,8 +51,15 @@
 }
 
 .checkbox__article {
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link {

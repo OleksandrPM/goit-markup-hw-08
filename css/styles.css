@@ -9,9 +9,6 @@
   --page-background-color: #f5f5f5;
   --hero-background-color: #c4c4c4;
 
-  --page-width: 1600px;
-  --container-width: 1200px;
-
   --normal-transition-duration: 250ms;
   --normal-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -109,23 +106,23 @@ svg {
   border-bottom: 1px solid #ececec;
 }
 
-.page__pages-head {
+/* .page__pages-head {
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.pages-head__container {
+/* .pages-head__container {
   display: flex;
-}
+} */
 
 /* Header navigation */
 .head-nav {
   display: flex;
 }
 
-.pages-head__head-nav {
+/* .pages-head__head-nav {
   margin-right: auto;
-}
+} */
 
 /* Logo */
 .logo {
@@ -200,15 +197,15 @@ svg {
 }
 
 /* Contakts */
-.contact-list--flex {
+.contacts--flex {
   display: flex;
 }
 
-.contact-list__item--in-flex:not(:last-child) {
+.contacts__item--in-flex:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-list__link {
+.contacts__link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -220,19 +217,19 @@ svg {
   transition-property: color;
 }
 
-.contact-list__link:hover,
-.contact-list__link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--brand-color);
 }
 
-.contact-list__link--with-paddings {
+.contacts__link--with-paddings {
   padding-top: 32px;
   padding-bottom: 32px;
 
   align-items: center;
 }
 
-.contact-list__icon {
+.contacts__icon {
   margin-right: 10px;
 
   fill: currentColor;

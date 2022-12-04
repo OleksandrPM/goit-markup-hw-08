@@ -4,6 +4,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 svg {
@@ -29,4 +31,16 @@ svg {
   margin: 0;
 
   text-decoration: none;
+
+  cursor: pointer;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+
+  font-family: map-get($fonts, 'main-font-family'), sans-serif;
+  font-style: map-get($fonts, 'main-font-style');
+
+  cursor: pointer;
 }

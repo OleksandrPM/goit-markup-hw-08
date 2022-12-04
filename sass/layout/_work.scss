@@ -3,13 +3,19 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  // Desktop styles
+  @media screen and (max-width: calc(map-get($breakpoints, 'desktop') - 0.02px)) {
+    display: none;
   }
 }
 
 .work__item {
-  width: 370px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    width: calc((100% - (30px * 2)) / 3);
   }
 }

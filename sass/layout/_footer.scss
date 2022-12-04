@@ -6,26 +6,68 @@
 }
 
 .footer__container {
-  display: flex;
+  // Phone styles
+  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+    text-align: center;
+  }
 
-  align-items: baseline;
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    align-items: baseline;
+  }
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    display: flex;
+
+    align-items: baseline;
+  }
 }
 
 .footer__address-block {
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    margin-right: 165px;
+  }
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .address-block__logo {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   padding: 0px;
 }
 
 .footer__joining {
-  margin-right: auto;
+  // Phone styles
+  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+    margin-bottom: 60px;
+  }
+
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+  }
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    margin-right: auto;
+  }
 }
 
 .invitation__title {
   margin-bottom: 20px;
+
+  text-align: center;
 
   font-size: 14px;
   line-height: 1.17;
@@ -33,4 +75,9 @@
   text-transform: uppercase;
 
   color: map-get($colors, 'clear-white-color');
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    text-align: left;
+  }
 }
