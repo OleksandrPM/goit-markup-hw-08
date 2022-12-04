@@ -1140,9 +1140,12 @@ svg {
 }
 
 .hero {
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 118px;
   padding-bottom: 118px;
+  max-width: 1600px;
+  text-align: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
