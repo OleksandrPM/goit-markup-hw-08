@@ -6,25 +6,19 @@
 }
 
 .footer__container {
-  // Phone styles
-  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
-    text-align: center;
-  }
+  text-align: center;
 
   // Tablet styles
   @media screen and (min-width: map-get($breakpoints, 'tablet')) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     align-items: baseline;
   }
 
   // Desktop styles
   @media screen and (min-width: map-get($breakpoints, 'desktop')) {
-    display: flex;
-
-    align-items: baseline;
+    text-align: left;
   }
 }
 

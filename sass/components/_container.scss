@@ -3,10 +3,10 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  min-width: 320px;
+  width: 100%;
 
   // Phone styles
-  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+  @media screen and (min-width: map-get($breakpoints, 'phone')) {
     width: map-get($breakpoints, 'phone');
   }
 
