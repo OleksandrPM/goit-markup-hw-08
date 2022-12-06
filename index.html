@@ -139,19 +139,40 @@
           <ul class="list work__list">
             <li class="work__item">
               <div class="work-thumb">
-                <img src="./images/index/laptop.jpg" alt="ноутбук" width="370" />
+                <img
+                  srcset="
+                    ./images/index/desktop/img.jpg    370w,
+                    ./images/index/desktop/img@2x.jpg 740w
+                  "
+                  src="./images/index/desktop/img.jpg"
+                  sizes="(min-width: 1200px) 370px,  100vw"
+                  min-width="370"
+                  alt="ноутбук"
+                />
                 <h3 class="work-thumb__title title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work-list__item">
               <div class="work-thumb">
-                <img src="./images/index/phones.jpg" alt="смартфони" width="370" />
+                <img
+                  srcset="./images/index/phone/img.jpg 370w, ./images/index/phone/img@2x.jpg 740w"
+                  src="./images/index/phone/img.jpg"
+                  sizes="(min-width: 1200px) 370px,  100vw"
+                  min-width="370"
+                  alt="смартфон"
+                />
                 <h3 class="work-thumb__title title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work-list__item">
               <div class="work-thumb">
-                <img src="./images/index/tablet.jpg" alt="планшет" width="370" />
+                <img
+                  srcset="./images/index/tablet/img.jpg 370w, ./images/index/tablet/img@2x.jpg 740w"
+                  src="./images/index/tablet/img.jpg"
+                  sizes="(min-width: 1200px) 370px,  100vw"
+                  min-width="370"
+                  alt="планшет"
+                />
                 <h3 class="work-thumb__title title">Дизайнерські рішення</h3>
               </div>
             </li>

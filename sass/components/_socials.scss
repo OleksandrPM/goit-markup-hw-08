@@ -35,23 +35,22 @@
   fill: currentColor;
 }
 
-.menu-container__socials .socials__item:not(:last-child) {
-  // position: relative;
-  padding-right: 10px;
+.menu-container__socials {
+  justify-content: start;
 
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  @media screen and (max-width: calc(map-get($breakpoints, 'phone') - 0.02px)) {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
 
-  // &::after {
-  //   // position: absolute;
-  //   content: '';
-  //   // bottom: 0px;
-  //   // left: calc(0px - var(--width-difference) * 0.5);
-
-  //   width: 1px;
-  //   height: 100%;
-  //   background: map-get($colors, 'brand-color');
-  //   border-radius: 2px;
-  // }
+.menu-container__socials .socials__item {
+  @media screen and (min-width: map-get($breakpoints, 'phone')) {
+    &:not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
 }
 
 .menu-container__socials .socials__link {

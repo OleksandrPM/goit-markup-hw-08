@@ -22,6 +22,8 @@
 }
 
 .site-nav__link {
+  font-weight: 500;
+
   color: map-get($colors, 'titles-color');
 
   transition-duration: map-get($transitions, 'normal-transition-duration');
@@ -30,7 +32,6 @@
 
   // phone styles
   @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
-    font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
@@ -55,17 +56,15 @@
   position: relative;
   color: map-get($colors, 'brand-color');
 
-  // Tablet styles
+  // Tablet & desktop styles
   @media screen and (min-width: map-get($breakpoints, 'tablet')) {
     &::after {
-      --width-difference: 10px;
-
       position: absolute;
       content: '';
-      bottom: 0px;
-      left: calc(0px - var(--width-difference) * 0.5);
+      bottom: -1px;
+      left: 0;
 
-      width: calc(100% + var(--width-difference));
+      width: 100%;
       height: 4px;
       background: map-get($colors, 'brand-color');
       border-radius: 2px;

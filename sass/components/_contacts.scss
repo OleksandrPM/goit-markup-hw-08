@@ -35,6 +35,22 @@
 .tel-link {
   font-size: 34px;
   line-height: 1.18;
+
+  color: map-get($colors, 'brand-color');
+
+  transition-duration: map-get($transitions, 'normal-transition-duration');
+  transition-timing-function: map-get($transitions, 'normal-transition-timing-function');
+  transition-property: color;
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'active-buttons-color');
+  }
+
+  // Small phone styles
+  @media screen and (max-width: calc(map-get($breakpoints, 'phone') - 0.02px)) {
+    font-size: 8vw;
+  }
 }
 
 .contacts--menu {

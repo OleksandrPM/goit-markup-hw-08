@@ -12,7 +12,7 @@
   @media screen and (min-width: map-get($breakpoints, 'tablet')) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
   }
 
@@ -24,11 +24,6 @@
 
 .footer__address-block {
   margin-bottom: 60px;
-
-  // Tablet styles
-  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
-    margin-right: 165px;
-  }
 
   // Desktop styles
   @media screen and (min-width: map-get($breakpoints, 'desktop')) {
@@ -48,10 +43,6 @@
     margin-bottom: 60px;
   }
 
-  // Tablet styles
-  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
-  }
-
   // Desktop styles
   @media screen and (min-width: map-get($breakpoints, 'desktop')) {
     margin-right: auto;
@@ -60,7 +51,6 @@
 
 .invitation__title {
   margin-bottom: 20px;
-
   text-align: center;
 
   font-size: 14px;
