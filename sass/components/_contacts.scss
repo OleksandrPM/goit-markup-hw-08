@@ -62,11 +62,6 @@
 }
 
 .contacts--header {
-  // Phone styles
-  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
-    display: none;
-  }
-
   // Desktop styles
   @media screen and (min-width: map-get($breakpoints, 'desktop')) {
     display: flex;

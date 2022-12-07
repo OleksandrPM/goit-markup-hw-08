@@ -3,10 +3,6 @@
   align-items: center;
 
   &__logo {
-    @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
-      margin-right: auto;
-    }
-
     // Tablet styles
     @media screen and (min-width: map-get($breakpoints, 'tablet')) {
       margin-right: 88px;
@@ -22,11 +18,6 @@
     // Phone styles
     @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
       display: none;
-    }
-
-    // Tablet & desktop styles
-    @media screen and (min-width: map-get($breakpoints, 'tablet')) {
-      margin-right: auto;
     }
   }
 }

@@ -1,19 +1,19 @@
 .site-nav {
-  // Tablet styles
+  // Tablet & desktop styles
   @media screen and (min-width: map-get($breakpoints, 'tablet')) {
     display: flex;
   }
 }
 
 .site-nav__item {
-  // phone styles
+  // Phone styles
   @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
     &:not(:last-child) {
       margin-bottom: 32px;
     }
   }
 
-  // Tablet styles
+  // Tablet & desktop styles
   @media screen and (min-width: map-get($breakpoints, 'tablet')) {
     &:not(:last-child) {
       margin-right: 50px;
@@ -37,7 +37,7 @@
     letter-spacing: 0.02em;
   }
 
-  // Tablet styles
+  // Tablet & desktop styles
   @media screen and (min-width: map-get($breakpoints, 'tablet')) {
     padding-top: 32px;
     padding-bottom: 32px;

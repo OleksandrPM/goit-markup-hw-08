@@ -371,11 +371,6 @@ svg {
   margin-bottom: 32px;
 }
 
-@media screen and (max-width: 767.98px) {
-  .contacts--header {
-    display: none;
-  }
-}
 @media screen and (min-width: 1200px) {
   .contacts--header {
     display: -webkit-box;
@@ -1138,11 +1133,6 @@ svg {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 767.98px) {
-  .head-nav__logo {
-    margin-right: auto;
-  }
-}
 @media screen and (min-width: 768px) {
   .head-nav__logo {
     margin-right: 88px;
@@ -1156,11 +1146,6 @@ svg {
 @media screen and (max-width: 767.98px) {
   .head-nav__site-nav {
     display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .head-nav__site-nav {
-    margin-right: auto;
   }
 }
 
@@ -1186,6 +1171,22 @@ svg {
 .pages-head {
   border-bottom: 1px solid #ececec;
 }
+.pages-head__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pages-head__head-nav {
+  margin-right: auto;
+}
+@media screen and (max-width: 767.98px) {
+  .pages-head__contacts {
+    display: none;
+  }
+}
 
 .hero {
   margin-right: auto;
@@ -1200,7 +1201,7 @@ svg {
 }
 @media screen and (max-width: 767.98px) {
   .hero {
-    background-size: 480px;
+    max-width: 480px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-images/hero-bg/phone/img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-images/hero-bg/phone/img.jpg);
   }
@@ -1213,7 +1214,7 @@ svg {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-size: 768px;
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-images/hero-bg/tablet/img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-images/hero-bg/tablet/img.jpg);
   }
@@ -1228,7 +1229,7 @@ svg {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-size: 1600px;
+    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-images/hero-bg/desktop/img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-images/hero-bg/desktop/img.jpg);
   }
