@@ -1,4 +1,7 @@
 .project-card {
+  display: flex;
+  flex-direction: column;
+
   background-color: map-get($colors, 'clear-white-color');
 
   transition-duration: map-get($transitions, 'normal-transition-duration');
@@ -45,6 +48,10 @@
 }
 
 .project-card__description {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
   padding: 20px 24px;
 
   border: 1px solid #eeeeee;
